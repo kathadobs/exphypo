@@ -1,0 +1,7 @@
+{"meta/shuffle": false}
+{"meta/batch_size": 128}
+{"meta/max_batches": 5}
+{"meta/restore_epoch": -1}
+{"meta/drop_percents": [0.0, 0.1, 0.2, 0.30000000000000004]}
+{"validated_losses_SORTEDBY_data_car/data_car/12": [0.8715788156471469, 0.8982878693125464, 1.0083065815269947, 1.2073675922372125]}
+{"validated_accuracies_SORTEDBY_data_car/data_car/12": [0.8265103697024346, 0.8129846708746619, 0.7790802524797115, 0.7318304779080252]}

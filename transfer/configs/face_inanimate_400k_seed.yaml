@@ -1,0 +1,25 @@
+# For save directories only enter the parent directory for all projects checkpoints. 
+# project.name will be joined to both checkpoints and runs as the basename directory.
+
+project:
+    name:             'face_inanimate_400k_seed'
+    description:      'Training VGG on face and objects on single classifier, large data version.'
+    model:            'VGG16'
+data_directories:
+    task1:            '/raid/katha/datasets/data_facecar'
+    task2:            '/raid/katha/datasets/data_inanimate'
+save_directories:
+    checkpoints_dir:  '/raid/pranjul/checkpoints/vgg/'
+    log_dir:          '/runs'
+hyperparameters: 
+    optimizer:        'sgd'
+    batch_size:       128
+    learning_rate:    0.001
+    momentum:         0.9
+    step_size:        30
+    weight_decay:     0.0001
+    split:            False
+max_train_samples:
+    task1:            247
+max_valid_samples:
+    task1:            50
