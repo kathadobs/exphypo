@@ -1,0 +1,24 @@
+# For save directories only enter the parent directory for all projects checkpoints. 
+# project.name will be joined to both checkpoints and runs as the basename directory.
+
+project:
+    name:             'inanimate_vgg_large'
+    description:      'Transfer Learning on VGG objects to cars'
+    model:            'VGG16'
+data_directories:
+    task1:            '/raid/katha/datasets/data_car'
+save_directories:
+    checkpoints_dir:  '/raid/pranjul/home/pranjul/transfer/modified_model'
+    log_dir:          './runs' 
+hyperparameters: 
+    optimizer:        'sgd'
+    batch_size:       64
+    learning_rate:    0.001
+    momentum:         0.9
+    step_size:        30
+    weight_decay:     0.0001
+    split:            False
+max_train_samples:
+    task1:            246
+max_valid_samples:
+    task1:            13
