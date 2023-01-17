@@ -1,7 +1,7 @@
 # exphypo
 
 
-This is the code base for the paper "CNNs Reveal the Computational Implausibility of the Expertise Hypothesis" published in iScience (https://www.cell.com/iscience/fulltext/S2589-0042(23)00053-6).
+This is the code base for the paper Kanwisher et al. (2023) "CNNs Reveal the Computational Implausibility of the Expertise Hypothesis" published in iScience (https://www.cell.com/iscience/fulltext/S2589-0042(23)00053-6).
 
 The folder 'transfer' contains the code to fine-tune the face-trained, the object-trained and the dual-task trained model on the car task.
 
